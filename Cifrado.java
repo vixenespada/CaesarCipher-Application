@@ -90,9 +90,10 @@ public class Cifrado {
 		JTextArea textArea_1 = new JTextArea();
 		splitPane.setLeftComponent(textArea_1);
 		JComboBox comboBox = new JComboBox();
-		comboBox.addItem(1);
-		comboBox.addItem(2);
-		comboBox.addItem(3);
+		for(int i=0;i<100;i++) {
+			comboBox.addItem(i);
+		}
+		
 		comboBox.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				int numeroCesar =(int)comboBox.getSelectedItem();
